@@ -1,0 +1,38 @@
+.conteiner{
+    width: 100%;
+    padding:5% 0;
+    background-color: #22042c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    color:white;
+    
+}
+.conteiner h1::after{
+    content: '';
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px auto;
+
+}
+.conteiner div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2%;
+    padding: 0;
+    margin: 20px 0;
+    
+}
+
+.conteiner div span{
+    width: 20%;
+    background-image: linear-gradient(120deg, #552463 0%, #320841 100%);
+    padding: 2% 2%;
+    border-radius: 10px;
+    color:#e298f2;
+}

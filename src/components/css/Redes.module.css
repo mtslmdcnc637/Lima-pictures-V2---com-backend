@@ -1,0 +1,12 @@
+.box{
+    
+    width: 80%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:5%;
+    color:#fff;
+    font-size: 30px;
+    margin: 0;
+}
