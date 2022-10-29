@@ -1,0 +1,23 @@
+import style from './css/Hero.module.css'
+import Redes from './Redes';
+function Hero() {
+    return (
+        <>
+            <div className={style.conteiner}>
+                <div>
+                    <h1>Ola! Bem vindo ao meu portfólio!</h1>
+                    <p className={style.herotext}>Me chamo Nathã e sou profissional do audiovisual a 3 anos</p>
+                </div>
+                <div className={style.profile}>
+                    <div className={style.down}>
+                        <div className={style.profileimg}>
+                        </div>
+                        <h3>Nathã Lima</h3>
+                        <p>Produtor audiovisual | Fotógrafo</p>
+                        <Redes /></div>
+                </div>
+            </div>
+        </>
+    )
+}
+export default Hero

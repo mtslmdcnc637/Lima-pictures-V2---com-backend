@@ -1,23 +1,27 @@
-.conteiner{
+.conteinerst{
     width: 100%;
-    height: 120px;
-    background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+    height: 170px;
+    background-color: #111;
     display: flex;
-    justify-content: left;
+    justify-content: space-around;
     flex-direction: row;
     align-items: center;
-    padding-left: 4%;
     
     gap:4%;
+    position: relative;
+    
 }
-.conteiner span{
-    display: inline-block;
-    width: 90px;
-    height: 90px;
+.conteinerst span{
+    position: relative;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    background: 
-        radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
-        radial-gradient(white 65%, transparent 0),
-        radial-gradient(to top right, orange, deeppink);
-
+    background-color: #fff;
+}
+.conteinerst span::before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: red;
+    offset: 2px;
 }

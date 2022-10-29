@@ -1,0 +1,29 @@
+.qrconteiner{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    background-image: linear-gradient(120deg, #e298f2 4%, white 100%);
+    padding: 40px 0;
+}
+.qrconteiner span{
+    width: 25%;
+
+}
+.qrconteiner span a{
+    background-color: #25d366;
+    padding: 9px;
+    display: block;
+    margin: 10px 0;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    width: 50%;
+    border-radius: 5px;
+}
+.qrconteiner img{
+    border: 10px solid black;
+}

@@ -6,6 +6,7 @@ function Menu(){
             <a href="">Home</a>
             <a href="">Locução</a>
             <a href="">Produção de vídeos</a>
+            <a href="">Fotografia</a>
             <a href="">Sobre min</a>
             <a href="">Contato</a>
         </div>

@@ -1,0 +1,15 @@
+.conteiner{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #552463;
+    padding: 15px;
+    color:white;
+}
+.conteiner h5, .conteiner,h6{
+    margin: 0;
+    padding: 0;
+}
