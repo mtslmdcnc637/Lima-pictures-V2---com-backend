@@ -1,5 +1,5 @@
 .conteiner{
-    width: 100%;
+    width: 99vw;
     display: flex;
     height:390px;
     flex-direction: row;
@@ -10,6 +10,13 @@
     background-image:url("../../assets/bg.jpg");
     background-size: 100%;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+  }
+  .down img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
   }
   .herotext{
     color:#fff;
@@ -26,7 +33,7 @@
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
-    z-index: 99;
+    
   }
   .profileimg{
     width: 150px;
@@ -60,3 +67,41 @@
     padding: 5% 0;
     
   }
+  @media screen and (max-width:1000px){
+    .conteiner{
+      
+      width: 100vw;
+      height: 220px;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      background-position:0 20px ;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      align-content: center;
+    }
+    .conteiner div{
+      margin-top: 8vh;
+      width: 100vw;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:10px;
+    }
+    .profile{
+      width: 100vw;
+      border: none;
+      
+    }
+    .down{
+      background-image: none;
+      background-color: #f4f4f4;
+    }
+    .down img{
+      display: none;
+    }
+  }
+ 

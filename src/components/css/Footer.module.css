@@ -1,5 +1,5 @@
 .conteiner{
-    width: 100%;
+    width: 99vw;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -8,8 +8,5 @@
     background-color: #552463;
     padding: 15px;
     color:white;
-}
-.conteiner h5, .conteiner,h6{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }

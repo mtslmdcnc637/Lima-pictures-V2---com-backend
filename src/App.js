@@ -1,29 +1,45 @@
-import './App.css';
-import Footer from './components/Footer';
-import Home from './components/Home'
-import Menu from './components/Menu';
-import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Locucao from './components/Locucao';
-import ProducaoDeVideo from './components/ProducaoDeVideo';
+import "./App.css";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import Contato from "./components/Contato";
+import Fotografia from "./components/Fotografia";
+import Sobre from "./components/Sobre";
+import Locucao from "./components/Locucao";
+import ProducaoDeVideo from "./components/ProducaoDeVideo";
+import Hero from "./components/Hero";
+import HomeContent from "./components/HomeContent";
+import Qrcode from "./components/Qrcode";
 
 function App() {
+  const width = window.screen.width
   return (
-    <BrowserRouter>
-    <Menu/>
-    
-    
-      <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/locução' element={<Locucao/>} />
-        <Route path='/produção_de_video' element={<ProducaoDeVideo/>} />
-        <Route path='/fotografia' element={<ProducaoDeVideo/>} />
-        <Route path='/sobre' element={<ProducaoDeVideo/>} />
-        <Route path='/contato' element={<ProducaoDeVideo/>} />
-      </Routes>
-    
-    
-    <Footer/>
-    </BrowserRouter>
+    <>
+      <Menu width={width}/>
+      <section id="home">
+        <Hero width={width}/>
+      <section>
+        <Sobre width={width}/>
+      </section>
+        <HomeContent width={width}/>
+        <Qrcode />
+      </section>
+      <section id="producao_de_videos">
+        <ProducaoDeVideo width={width}/>
+      </section>
+      <section id="locucao">
+        <Locucao width={width}/>
+      </section>
+      <section id="fotografia">
+        <Fotografia width={width}/>
+      </section> 
+      
+      <section id="contato">
+        <Contato width={width}/>
+      </section>
+     
+
+      <Footer />
+    </>
   );
 }
 

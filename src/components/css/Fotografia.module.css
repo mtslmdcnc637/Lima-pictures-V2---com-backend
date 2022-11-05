@@ -1,0 +1,82 @@
+.conteiner{
+    width: 99vw;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(to top, #E298F2 0%, #22042C 100%);
+    margin: 0;
+}
+.imagens{
+    width: 80%;
+}
+.imagens img{
+    width: 100%;
+    
+}
+.imghero{
+    width: 99vw;
+    height: 350px;
+    background-image: url("../../assets/robert-shunev-mS1nlYbq1kA-unsplash.jpg");
+    background-size: 100%;
+    background-position: 0 -100px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: left;
+    color:#fff;
+}
+.imghero h1{
+    font-size: 35px;
+}
+.imghero h1::after{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 200px;
+    background-color: rgba(255,255,255,0.85);
+    transform: translateY(50px);
+}
+.imghero p {
+    font-size: 25px;
+}
+@media screen and (max-width:1000px){
+    .conteiner{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .imagens{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .imghero{
+        width: 100%;
+        height: 220px;
+        margin: 0;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: 100%;
+        background-position: initial;
+       
+    }
+    .imghero h1{
+        font-size: 45px;
+        font-weight: bold;
+    }
+    .imghero p{
+        display: none;
+    }
+    .imghero h1::after{
+        transform: translate(0);
+
+    }
+}
