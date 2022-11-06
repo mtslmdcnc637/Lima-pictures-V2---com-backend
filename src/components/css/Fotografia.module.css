@@ -10,18 +10,16 @@
     margin: 0;
 }
 .imagens{
-    width: 80%;
+    max-width: 80%;
     -webkit-box-shadow: 10px 10px 38px 0px rgba (0,0,0,0,75) ;
 -moz-box-shadow: 10px 10px 38px 0px rgba (0,0,0,0,75) ;
 box-shadow: 10px 10px 38px 0px rgba (0,0,0,0,75) ;
 border-radius: 15px;
 }
 .imagens img{
-    width: 100%;
     border-radius: 15px;
-    
-
-    
+    max-height: 90vh;
+    max-width: 90vw;
 }
 .imghero{
     width: 99vw;
@@ -43,6 +41,7 @@ border-radius: 15px;
 .imghero p {
     font-size: 25px;
 }
+
 @media screen and (max-width:1000px){
     .conteiner{
         width: 100vw;
@@ -55,6 +54,10 @@ border-radius: 15px;
         width: 90%;
         padding: 0;
         margin: 0;
+        max-height: 95vh;
+    }
+    .imagens img{
+        max-height: 90vh;
     }
     .imghero{
         width: 100%;

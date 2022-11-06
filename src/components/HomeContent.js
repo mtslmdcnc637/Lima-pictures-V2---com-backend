@@ -1,42 +1,38 @@
 import style from './css/HomeContent.module.css'
-function HomeContent(){
-    return(
+import { BsCamera2, BsCameraReelsFill, BsFillMicFill, } from "react-icons/bs";
+import { FaPhotoVideo } from 'react-icons/fa'
+function HomeContent() {
+    return (
         <>
             <div className={style.conteiner}>
                 <h1>Serviços que ofereço</h1>
                 <div>
                     <span>
+                        <FaPhotoVideo />
                         <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
+                        <p>Independente da finalidade do seu Vídeo, é importante que ele tenha uma boa construção. Para isso é necessária uma boa edição.
+                            Para tornar seu vídeo mais dinâmico, cortes, colorgrading, efeitos sonoros, efeitos visuais, podem deixar seu vídeo muito mais atrativo, seja ele para redes sociais ou com finalidades comerciais.</p>
+                        <a href="#producao_de_videos">Ver exemplos</a>
                     </span>
                     <span>
-                        <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
+                        <BsCamera2 />
+                        <h3>Fotografia</h3>
+                        <p>Fotografia de alimentos, natureza e estabelecimentos comerciais. Com o tratamento incluso.
+                            (No momento atendo apenas a região de Paraty e proximidades)</p>
+                        <a href="#fotografia">Ver exemplos</a>
                     </span>
                     <span>
-                        <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
+                        <BsCameraReelsFill />
+                        <h3>Locução</h3>
+                        <p>Equipamentos para garantir uma boa iluminação, assim como teleprompter para te ajudar na produção de conteúdo, assim como câmeras Dslr, vão deixar seus vídeos com uma cara mais profissional.
+                            (No momento atendo apenas a região de Paraty e proximidades)</p>
+                        <a href="#producao_de_videos">Ver exemplos</a>
                     </span>
-                    
-                    
+
+
                 </div>
-                <div>
-                    <span>
-                        <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
-                    </span>
-                    <span>
-                        <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
-                    </span>
-                    <span>
-                        <h3>Edição de vídeo</h3>
-                        <p>Utilizo muitps recursos e programas para trazer o melhor video possival pra vc</p>
-                    </span>
-                    
-                    
-                </div>
-                
+
+
             </div>
         </>
     )

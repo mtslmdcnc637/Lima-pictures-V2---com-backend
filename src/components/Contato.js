@@ -17,17 +17,17 @@ function Contato() {
           <span>
             <AiOutlineMail />
             <b>Email:</b>
-            <p>contato@limapictures.com.br</p>
+            <p>nathaempreendimentos@gmail.com</p>
           </span>
           <span>
             <AiOutlinePhone />
             <b>Telefone:</b>
-            <p>(24)999999999</p>
+            <p>(24)993072587</p>
           </span>
           <span>
             <AiOutlineWhatsApp />
             <b>Whatsapp:</b>
-            <p>(24)999999999</p>
+            <p>(24)993072587</p>
           </span>
         </div>
       </div>

@@ -1,4 +1,9 @@
 import style from "./css/Locucao.module.css";
+import MercadoDaDilda from '../assets/Mercado da Dilda.mp3'
+import NarracaoCuriosidades from '../assets/Narração para vídeo de curiosidades.mp3'
+import LocucaoMarta from '../assets/locução martha Mp3.mp3'
+import RanchoDoRango from '../assets/Restaurante Rancho Do Rango mp3.mp3'
+
 function Locucao() {
   return (
     <>
@@ -9,33 +14,25 @@ function Locucao() {
         </p>
       </div>
       <div className={style.content}>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-        <p>Audio narrado</p>
-      </audio>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-      </audio>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-        <p>Audio narrado</p>
-      </audio>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-      </audio>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-        <p>Audio narrado</p>
-      </audio>
-      <audio controls>
-        <source src="viper.mp3" type="audio/mp3"/>
-        <source src="viper.ogg" type="audio/ogg"/>
-      </audio>
+        <h6>Narração para video de cusiosidades</h6>
+        <audio controls>
+          <source src={NarracaoCuriosidades} type="audio/mp3" />
+        </audio>
+        <h6>Locução para mercado</h6>
+        <audio controls>
+          <source src={MercadoDaDilda} type="audio/mp3" />
+
+        </audio>
+        <h6>Locução</h6>
+        <audio controls>
+          <source src={LocucaoMarta} type="audio/mp3" />
+          <p>Audio narrado</p>
+        </audio>
+        <h6>Locução para restaurante</h6>
+        <audio controls>
+          <source src={RanchoDoRango} type="audio/mp3" />
+        </audio>
+   
 
       </div>
     </>

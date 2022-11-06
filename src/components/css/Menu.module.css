@@ -1,3 +1,11 @@
+.to_top{
+    font-size: 55px;
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+}
 .menu {
     box-sizing: border-box;
     width: 99vw;

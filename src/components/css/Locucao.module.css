@@ -36,6 +36,10 @@
     gap: 2%;
     background-color: #22042C;
 }
+.content h6{
+    color:#fff;
+    margin: 22px 0 0 0 ;
+}
 .content audio{
     width: 40%;
     margin: 10px;

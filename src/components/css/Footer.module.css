@@ -10,3 +10,13 @@
     color:white;
     box-sizing: border-box;
 }
+@media screen and (max-width:1000px)
+{
+    .conteiner{
+        height: auto;
+        padding: 15px  0;
+    }
+    .conteiner h5, .conteiner h6{
+        font-size: 11px;
+    }
+}

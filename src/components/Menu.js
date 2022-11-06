@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
 import style from './css/Menu.module.css'
 import Redes from './Redes'
 function Menu(props){
@@ -40,6 +41,7 @@ function Menu(props){
             
             
         </header>
+        <a href="#home"><BsFillArrowUpCircleFill className={style.to_top}/></a>
             
     </>
     )
