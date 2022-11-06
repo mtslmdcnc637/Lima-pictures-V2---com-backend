@@ -17,11 +17,11 @@ function App() {
       <Menu width={width}/>
       <section id="home">
         <Hero width={width}/>
-      <section>
+      {/*<section>
         <Sobre width={width}/>
-      </section>
+  </section> */}
         <HomeContent width={width}/>
-        <Qrcode />
+        <Qrcode width={width} />
       </section>
       <section id="producao_de_videos">
         <ProducaoDeVideo width={width}/>

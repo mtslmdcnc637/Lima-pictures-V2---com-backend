@@ -1,7 +1,7 @@
 .conteiner{
     width: 99vw;
     display: flex;
-    height:390px;
+    height:480px;
     flex-direction: row;
     vertical-align:middle;
     justify-content: space-around;
@@ -11,6 +11,12 @@
     background-size: 100%;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
+  }
+  .conteiner div h1{
+    font-weight: bold;
+  }
+  .toptext{
+    width: 40%;
   }
   .down img{
     width: 100px;
@@ -22,7 +28,7 @@
     color:#fff;
   }
   .profile{
-    width: 280px;
+    width: 260px;
     border-radius:  5px;
     transform: translateY(5%);
     color:#f9f9f9;
@@ -34,7 +40,8 @@
     border-radius: 12px;
     border: 1px solid rgba(209, 213, 219, 0.3);
     
-  }
+  } 
+  
   .profileimg{
     width: 150px;
     height: 150px;
@@ -67,19 +74,19 @@
     padding: 5% 0;
     
   }
+ 
   @media screen and (max-width:1000px){
     .conteiner{
-      
       width: 100vw;
-      height: 220px;
+      height: 92vh;
       flex-direction: column;
-      background-repeat: no-repeat;
-      background-position:0 20px ;
+      background-image: url("../../assets/bgmobile.jpg");
       align-items: center;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      padding: 10% 0;
+      text-align: left;
       align-content: center;
+      
     }
     .conteiner div{
       margin-top: 8vh;
@@ -90,6 +97,18 @@
       justify-content: center;
       align-items: center;
       gap:10px;
+      padding: 0 10px;
+
+    }
+    .conteiner div h1 b{
+      color:#e298f2;
+    }
+    .toptext p{
+      color:white;
+    }
+    .conteiner div h1{
+      font-size: 50px;
+      font-weight: bold;
     }
     .profile{
       width: 100vw;

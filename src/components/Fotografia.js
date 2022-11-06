@@ -8,7 +8,7 @@ function Fotografia() {
       <div className={style.conteiner}>
         <div className={style.imghero}>
           <h1>Fotografia</h1>
-          <p>Fotos de minha autoria</p>
+          <p>Veja algumas fotos tiradas por mim</p>
         </div>
           
 

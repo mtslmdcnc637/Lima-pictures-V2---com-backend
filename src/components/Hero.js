@@ -7,10 +7,12 @@ function Hero(props) {
     return (
         <>
             <div className={style.conteiner}>
-                <div>
+                <div className={style.toptext}>
                     
-                    <h1>Ola! Bem vindo ao meu portfólio!</h1>
-                    <p className={style.herotext}>Me chamo Nathã e sou profissional do audiovisual a 3 anos</p>
+                    <h1>Ola! Bem vindo(a) ao meu <b>portfólio!</b></h1>
+                    <p className={style.herotext}>
+                        Olá meu nome é Nathã, seja bem vindo ao meu site. Neste espaço você vai encontrar amostras dos serviços que ofereço, como fotografia, locução e produção de vídeos. Fique a vontade para navegar e verificar se os meus serviços atendem a sua demanda. Caso tenha alguma dúvida entre em contato, será um prazer te atender
+                    </p> 
                 </div>
                 {width > 1000 && (
                 <div className={style.profile}>
