@@ -9,7 +9,7 @@ function Contato() {
   return (
     <div className={style.conteiner}>
       <h3>
-        Sinta-se à vontade para entrar em, coontato através de um dos meios
+        Sinta-se à vontade para entrar em, contato através de um dos meios
         abaixo
       </h3>
       <div>

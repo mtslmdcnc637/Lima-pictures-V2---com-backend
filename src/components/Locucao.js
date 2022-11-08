@@ -18,16 +18,12 @@ function Locucao() {
         <audio controls>
           <source src={NarracaoCuriosidades} type="audio/mp3" />
         </audio>
-        <h6>Locução para mercado</h6>
+        <h6>Locução comercial</h6>
         <audio controls>
           <source src={MercadoDaDilda} type="audio/mp3" />
 
         </audio>
-        <h6>Locução</h6>
-        <audio controls>
-          <source src={LocucaoMarta} type="audio/mp3" />
-          <p>Audio narrado</p>
-        </audio>
+        
         <h6>Locução para restaurante</h6>
         <audio controls>
           <source src={RanchoDoRango} type="audio/mp3" />

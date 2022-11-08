@@ -25,6 +25,78 @@ function Fotografia() {
           
 
           <Carousel className={style.imagens}>
+                      
+                      
+                     
+                      <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src={img9}
+                          alt="First slide"
+                        />
+                        <Carousel.Caption>
+                          <h3></h3>
+                          <p>
+                            
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                     
+                      <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src={img10}
+                          alt="First slide"
+                        />
+                        <Carousel.Caption>
+                          <h3></h3>
+                          <p>
+                            
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                     
+                      <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src={img11}
+                          alt="First slide"
+                        />
+                        <Carousel.Caption>
+                          <h3></h3>
+                          <p>
+                            
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                     
+                      <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src={img12}
+                          alt="First slide"
+                        />
+                        <Carousel.Caption>
+                          <h3></h3>
+                          <p>
+                            
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                     
+                      <Carousel.Item>
+                        <img
+                          className="d-block w-100"
+                          src={img13}
+                          alt="First slide"
+                        />
+                        <Carousel.Caption>
+                          <h3></h3>
+                          <p>
+                            
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
                       <Carousel.Item>
                         <img
                           className="d-block w-100"
@@ -122,81 +194,10 @@ function Fotografia() {
                           </p>
                         </Carousel.Caption>
                       </Carousel.Item>
-                     
                       <Carousel.Item>
                         <img
                           className="d-block w-100"
                           src={img8}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img9}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img10}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img11}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img12}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img13}
                           alt="First slide"
                         />
                         <Carousel.Caption>
