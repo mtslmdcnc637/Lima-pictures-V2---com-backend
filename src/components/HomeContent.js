@@ -15,6 +15,12 @@ function HomeContent() {
                         <a href="#producao_de_videos">Ver exemplos</a>
                     </span>
                     <span>
+                        <BsFillMicFill />
+                        <h3>Locuçao/Narração</h3>
+                        <p>Locução comercial ou narração para roteiros de vídeos. Voz madura - grave</p>
+                        <a href="#locucao">Ver exemplos</a>
+                    </span>
+                    <span>
                         <BsCamera2 />
                         <h3>Fotografia</h3>
                         <p>Fotografia de alimentos, natureza e estabelecimentos comerciais. Com o tratamento incluso.
@@ -23,11 +29,12 @@ function HomeContent() {
                     </span>
                     <span>
                         <BsCameraReelsFill />
-                        <h3>Locução</h3>
+                        <h3>Gravação de vídeos</h3>
                         <p>Equipamentos para garantir uma boa iluminação, assim como teleprompter para te ajudar na produção de conteúdo, assim como câmeras Dslr, vão deixar seus vídeos com uma cara mais profissional.
                             (No momento atendo apenas a região de Paraty e proximidades)</p>
                         <a href="#producao_de_videos">Ver exemplos</a>
                     </span>
+                    
 
 
                 </div>

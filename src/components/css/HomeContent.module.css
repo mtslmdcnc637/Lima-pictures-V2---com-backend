@@ -8,6 +8,7 @@
     margin: 0;
     color:white;
     box-sizing: border-box;
+    padding: 0 15px;
     
 }
 .conteiner svg{
@@ -24,6 +25,7 @@
 
 }
 .conteiner div{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -50,7 +52,7 @@
 }
 
 .conteiner div span{
-    width: 30%;
+    width: 25%;
     background-image: linear-gradient(120deg, #552463 0%, #320841 100%);
     padding: 2% 2%;
     border-radius: 10px;
