@@ -1,0 +1,26 @@
+return (
+    <>
+      <Menu width={width}/>
+      <section id="home">
+        <Hero width={width}/>
+        <HomeContent width={width}/>
+        <Qrcode width={width} />
+      </section>
+      <section id="producao_de_videos">
+        <ProducaoDeVideo width={width}/>
+      </section>
+      <section id="locucao">
+        <Locucao width={width}/>
+      </section>
+      <section id="fotografia">
+        <Fotografia width={width}/>
+      </section> 
+      
+      <section id="contato">
+        <Contato width={width}/>
+      </section>
+     
+
+      <Footer />
+    </>
+  )

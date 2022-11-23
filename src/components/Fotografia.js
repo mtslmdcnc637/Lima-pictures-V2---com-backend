@@ -14,7 +14,19 @@ import img11 from "../assets/img11.jpg";
 import img12 from "../assets/img12.jpg";
 import img13 from "../assets/img13.jpg";
 import Carousel from "react-bootstrap/Carousel";
+import axios from "axios";
+import {useEffect, useState} from 'react'
 function Fotografia() {
+  const [fotos, setFotos] = useState([]);
+  useEffect(()=>{
+    axios.get("https://portfolio-natha.herokuapp.com/image")
+    .then((response)=>{
+      setFotos(response.data)
+    }).catch(()=>{
+      console.log("Houve um erro ao carregar as fotos")
+    })
+  },[])
+
   return (
     <>
       <div className={style.conteiner}>
@@ -26,189 +38,25 @@ function Fotografia() {
 
           <Carousel className={style.imagens}>
                       
+                      {fotos.map((foto, key)=>{
+                        return(
+                          <Carousel.Item>
+                            <img
+                          className="d-block w-100"
+                          src={foto.link}
+                          alt={foto.title}
+                        />
+                        <Carousel.Caption>
+                          <h3>{foto.title} </h3>
+                          <p>
+                            {foto.description}
+                          </p>
+                        </Carousel.Caption>
+                      </Carousel.Item>
+                        )
+                      })}
                       
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img9}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img10}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img11}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img12}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img13}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img2}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img3}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img4}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img5}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img6}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img7}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          className="d-block w-100"
-                          src={img8}
-                          alt="First slide"
-                        />
-                        <Carousel.Caption>
-                          <h3></h3>
-                          <p>
-                            
-                          </p>
-                        </Carousel.Caption>
-                      </Carousel.Item>
-                     
-                    
+
           </Carousel>
         
       </div>
